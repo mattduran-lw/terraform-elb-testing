@@ -161,7 +161,7 @@ resource "aws_elb" "web" {
 # Create a key pair to use for ssh-ing into instance
 resource "aws_key_pair" "auth" {
   key_name   = var.key_name
-  public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCgkLjpZPDbIu/tcmN1XjLUkePHJ+p0F9EzmjOibqerkAtbQUCfXUu7oCvKSBJJPHEfaO0BofKKV10ohCqdzGjr8nBBoATzQcSMoks+CVMIxN2gnkalxWIZetWS53U4LSpMQSrSF4wLaIw8yhTt7jVxnhcUwXf8zy5B3arW/U6xcNGMUP4qvg47ml+NIaSdwdx0dreedso98Y41D8p7nANN/lY/JS+XbH6UE2M4JNyDYRikVnrI0lRkzrc97EbA7XMthlbgLsAECHz3m7L3bbAuvr0AiAGJhXlqsPid6iwl8TahtSoMiDNvW8BNd3ridLKR9r/kf7zTBbzVu5yAc16T"
+  public_key = var.public_key
 }
 
 
