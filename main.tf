@@ -172,7 +172,7 @@ resource "aws_instance" "web" {
     user        = "ubuntu"
     type        = "ssh"
     host        = aws_instance.web.public_ip
-    private_key = file("matt-key-terraform.pem")
+    private_key = file("FILE NAME HERE")
   }
 
   availability_zone           = var.availability_zone
