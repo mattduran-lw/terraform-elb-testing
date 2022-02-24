@@ -28,3 +28,7 @@ variable "aws_amis" {
 variable "availability_zone" {
   default = "us-west-2a"
 }
+
+variable "public_key" {
+  description = "Public key to authenticate with"
+}
